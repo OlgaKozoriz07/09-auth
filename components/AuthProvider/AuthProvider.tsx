@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useAuthStore } from "@/lib/store/authStore";
-import { checkSession, getMe } from "@/lib/api/clientApi";
+import { checkSession, fetchCurrentUser } from "@/lib/api/clientApi";
 
 type Props = {
   children: React.ReactNode;
@@ -19,7 +19,7 @@ function AuthProvider({ children }: Props) {
       const isAuthenticated = await checkSession();
 
       if (isAuthenticated) {
-        const user = await getMe();
+        const user = await fetchCurrentUser();
 
         if (user) {
           setUser(user);
