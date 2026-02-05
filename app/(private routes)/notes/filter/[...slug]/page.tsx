@@ -4,7 +4,7 @@ import {
   dehydrate,
 } from "@tanstack/react-query";
 import { fetchNotes } from "@/lib/api/clientApi";
-import NoteClient from "./Note.client";
+import NoteClient from "./Notes.client";
 import { Metadata } from "next";
 
 interface NotesByCategoryProps {

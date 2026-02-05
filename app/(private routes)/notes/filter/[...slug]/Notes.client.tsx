@@ -1,6 +1,6 @@
 "use client";
 
-import css from "./NotePage.module.css";
+import css from "./NotesPage.module.css";
 import { useState, useEffect } from "react";
 import SearchBox from "@/components/SearchBox/SearchBox";
 import { useDebouncedCallback } from "use-debounce";
