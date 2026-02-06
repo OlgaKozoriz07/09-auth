@@ -70,7 +70,7 @@ async function checkSession() {
 }
 
 async function fetchCurrentUser() {
-  const { data } = await nextServer.get<User>("/auth/me");
+  const { data } = await nextServer.get<User>("/users/me");
 
   return data;
 }
